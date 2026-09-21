@@ -1,0 +1,266 @@
+<title>Terms of Use</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg:         #F7FAF9;
+    --bg-card:    #FFFFFF;
+    --text:       #1A2A24;
+    --text-muted: #4D7065;
+    --text-light: #7A9E92;
+    --accent:     #2d9b6f;
+    --accent-dim: #D6EAE1;
+    --border:     #DDE8E3;
+    --shadow:     0 1px 4px rgba(29,74,54,0.07);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:         #0C1A15;
+      --bg-card:    #132018;
+      --text:       #E4F2EB;
+      --text-muted: #8BB8A4;
+      --text-light: #5A8A76;
+      --accent:     #3dbb84;
+      --accent-dim: #152E22;
+      --border:     #1E3328;
+      --shadow:     0 1px 4px rgba(0,0,0,0.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:         #0C1A15;
+    --bg-card:    #132018;
+    --text:       #E4F2EB;
+    --text-muted: #8BB8A4;
+    --text-light: #5A8A76;
+    --accent:     #3dbb84;
+    --accent-dim: #152E22;
+    --border:     #1E3328;
+    --shadow:     0 1px 4px rgba(0,0,0,0.25);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    padding-inline: 20px;
+    padding-block: 48px 80px;
+  }
+
+  .page {
+    max-width: 660px;
+    margin-inline: auto;
+  }
+
+  .app-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-dim);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 5px 14px 5px 8px;
+    margin-bottom: 32px;
+  }
+  .app-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    flex-shrink: 0;
+    display: block;
+  }
+  .app-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: clamp(26px, 5vw, 36px);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.25;
+    text-wrap: balance;
+    margin-bottom: 8px;
+  }
+  .updated {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 40px;
+  }
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin-block: 40px;
+  }
+
+  .section {
+    margin-bottom: 32px;
+  }
+  .section:last-child {
+    margin-bottom: 0;
+  }
+  .section h2 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section h2::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 16px;
+    background: var(--accent);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  .section p {
+    font-size: 15px;
+    color: var(--text-muted);
+    white-space: pre-line;
+    line-height: 1.75;
+  }
+  .section p a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .section p a:hover { text-decoration: underline; }
+
+  .contact-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--accent-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 18px;
+  }
+  .contact-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-light);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .contact-email {
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .contact-email:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  footer a {
+    color: var(--text-light);
+    text-decoration: none;
+  }
+  footer a:hover { color: var(--accent); }
+</style>
+
+<div class="page">
+  <div class="app-badge">
+    <img class="app-icon" src="icon-rounded.png" alt="Easy Mealplan">
+    <span class="app-name">Easy Mealplan</span>
+  </div>
+
+  <h1>Terms of Use</h1>
+  <p class="updated">Last updated: August 2026</p>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <h2>Acceptance</h2>
+    <p>By using Meal Plan you agree to these terms. If you do not agree, please stop using the app.</p>
+  </div>
+
+  <div class="section">
+    <h2>The Service</h2>
+    <p>Meal Plan helps you plan weekly meals, manage recipes, and generate shopping lists. The app is provided as-is and is intended for personal, non-commercial use.</p>
+  </div>
+
+  <div class="section">
+    <h2>Your Content</h2>
+    <p>Recipes and meal plans you create belong to you. By storing them in the app, you grant us the right to store and sync that content on your behalf.</p>
+  </div>
+
+  <div class="section">
+    <h2>Acceptable Use</h2>
+    <p>You agree not to:
+
+• Misuse or attempt to disrupt the service.
+• Access or tamper with another user's data.
+• Use the app for any unlawful purpose.</p>
+  </div>
+
+  <div class="section">
+    <h2>Household Sharing</h2>
+    <p>When you create or join a household, your meal plans and shopping data are shared with all members of that household. Leaving a household does not delete shared data.</p>
+  </div>
+
+  <div class="section">
+    <h2>Service Availability</h2>
+    <p>We aim to keep the service available but cannot guarantee uninterrupted access. We may update, change, or discontinue features at any time.</p>
+  </div>
+
+  <div class="section">
+    <h2>Limitation of Liability</h2>
+    <p>The app is provided without warranty of any kind. We are not liable for any loss of data, loss of access, or damages arising from use of the service.</p>
+  </div>
+
+  <div class="section">
+    <h2>Changes to These Terms</h2>
+    <p>We may update these terms from time to time. Continued use of the app after changes are posted constitutes your acceptance of the updated terms.</p>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <div class="contact-label">Questions about these terms</div>
+        <a href="mailto:alcoan@gmail.com" class="contact-email">alcoan@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2026 Easy Mealplan</span>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</div>

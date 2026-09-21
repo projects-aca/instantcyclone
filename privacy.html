@@ -1,0 +1,265 @@
+<title>Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg:         #F7FAF9;
+    --bg-card:    #FFFFFF;
+    --text:       #1A2A24;
+    --text-muted: #4D7065;
+    --text-light: #7A9E92;
+    --accent:     #2d9b6f;
+    --accent-dim: #D6EAE1;
+    --border:     #DDE8E3;
+    --shadow:     0 1px 4px rgba(29,74,54,0.07);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:         #0C1A15;
+      --bg-card:    #132018;
+      --text:       #E4F2EB;
+      --text-muted: #8BB8A4;
+      --text-light: #5A8A76;
+      --accent:     #3dbb84;
+      --accent-dim: #152E22;
+      --border:     #1E3328;
+      --shadow:     0 1px 4px rgba(0,0,0,0.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:         #0C1A15;
+    --bg-card:    #132018;
+    --text:       #E4F2EB;
+    --text-muted: #8BB8A4;
+    --text-light: #5A8A76;
+    --accent:     #3dbb84;
+    --accent-dim: #152E22;
+    --border:     #1E3328;
+    --shadow:     0 1px 4px rgba(0,0,0,0.25);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    padding-inline: 20px;
+    padding-block: 48px 80px;
+  }
+
+  .page {
+    max-width: 660px;
+    margin-inline: auto;
+  }
+
+  /* ── Header ── */
+  .app-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-dim);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 5px 14px 5px 8px;
+    margin-bottom: 32px;
+  }
+  .app-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    flex-shrink: 0;
+    display: block;
+  }
+  .app-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: clamp(26px, 5vw, 36px);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.25;
+    text-wrap: balance;
+    margin-bottom: 8px;
+  }
+  .updated {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 40px;
+  }
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin-block: 40px;
+  }
+
+  /* ── Sections ── */
+  .section {
+    margin-bottom: 32px;
+  }
+  .section:last-child {
+    margin-bottom: 0;
+  }
+  .section h2 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section h2::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 16px;
+    background: var(--accent);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  .section p {
+    font-size: 15px;
+    color: var(--text-muted);
+    white-space: pre-line;
+    line-height: 1.75;
+  }
+  .section p a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .section p a:hover {
+    text-decoration: underline;
+  }
+
+  /* ── Contact card ── */
+  .contact-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--accent-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 18px;
+  }
+  .contact-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-light);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .contact-email {
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .contact-email:hover { text-decoration: underline; }
+
+  /* ── Footer ── */
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  footer a {
+    color: var(--text-light);
+    text-decoration: none;
+  }
+  footer a:hover { color: var(--accent); }
+</style>
+
+<div class="page">
+  <div class="app-badge">
+    <img class="app-icon" src="icon-rounded.png" alt="Easy Mealplan">
+    <span class="app-name">Easy Mealplan</span>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: August 2026</p>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <h2>Introduction</h2>
+    <p>Meal Plan is a personal meal planning app. This policy explains what data we collect and how we use it.</p>
+  </div>
+
+  <div class="section">
+    <h2>Data We Collect</h2>
+    <p>We collect the following data when you use the app:
+
+• Account info: your email address and display name when you sign in.
+• Recipes: names, ingredients, instructions, and photos you add.
+• Meal plans: your weekly schedule.
+• Shopping list: items and check states.
+• Household data: shared between members you invite.
+• App settings: language, units, and preferences stored locally on your device.</p>
+  </div>
+
+  <div class="section">
+    <h2>How We Use Your Data</h2>
+    <p>Your data is used solely to provide the app's features — syncing your recipes and plans across devices and sharing within your household. We do not sell or share your data with third parties for marketing purposes.</p>
+  </div>
+
+  <div class="section">
+    <h2>Third-Party Services</h2>
+    <p>We use Firebase (by Google) for authentication and cloud storage. Your data is stored on Google's servers subject to Google's Privacy Policy (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>).</p>
+  </div>
+
+  <div class="section">
+    <h2>Data Retention</h2>
+    <p>Your data is stored until you delete your account or remove data manually. Household data is retained until the household is dissolved.</p>
+  </div>
+
+  <div class="section">
+    <h2>Your Rights</h2>
+    <p>You may request deletion of your account and all associated data at any time by contacting us at the address below.</p>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <div class="contact-label">Privacy questions</div>
+        <a href="mailto:alcoan@gmail.com" class="contact-email">alcoan@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2026 Easy Mealplan</span>
+    <a href="terms.html">Terms of Use</a>
+  </footer>
+</div>
